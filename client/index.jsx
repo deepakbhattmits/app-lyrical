@@ -8,7 +8,8 @@ import './style/style.css';
 
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  // uri: 'http://localhost:4000/graphql',
+  uri:"https://api.spacex.land/graphql",
   cache: new InMemoryCache(),
   // dataIdFromObject:o=> o?.id
 })
