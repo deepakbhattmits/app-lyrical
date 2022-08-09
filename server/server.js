@@ -14,17 +14,17 @@ const MONGO_URI = `mongodb+srv://${DB_USER}:${DB_PWD}@cluster0.lyu47.mongodb.net
 if (!MONGO_URI) {
   throw new Error('You must provide a Mongo URI')
 }
-mongoose
-  .connect(MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then((result) => {
-    console.log('Connected to MongoDB instance')
-  })
-  .catch((err) => {
-    console.log('Error : ', err)
-  })
+// mongoose
+//   .connect(MONGO_URI, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   })
+//   .then((result) => {
+//     console.log('Connected to MongoDB instance')
+//   })
+//   .catch((err) => {
+//     console.log('Error : ', err)
+//   })
 
 app.use(bodyParser.json())
 app.use(
